@@ -7,3 +7,7 @@ clean:
 	rm -f tle_calc tle_calc.exe *.o
 .PHONY: all clean
 
+
+test: tle_calc
+	python3 tests/test_cli.py
+.PHONY: test

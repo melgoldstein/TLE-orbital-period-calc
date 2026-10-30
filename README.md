@@ -1,6 +1,6 @@
 TLE orbital period calculator
 Computes two-body orbital dimensions from NORAD two-line elements.
-Build: make
+Build: make; regression tests: make test (Python 3).
 Run: ./tle_calc sample_leo.txt
 Outputs catalog ID, period (minutes), and orbital dimensions (kilometers).
 Checks 69-column checksums and matching catalog IDs before calculation.

@@ -28,6 +28,9 @@ static int number(const char *line, size_t start, size_t width, double *result) 
 }
 
 int main(int argc, char **argv) {
+    if (argc == 2 && !strcmp(argv[1], "--help")) {
+        puts("usage: tle_calc orbital_elements.txt"); return 0;
+    }
     if (argc != 2) {
         fprintf(stderr, "usage: tle_calc orbital_elements.txt\n");
         return 2;
